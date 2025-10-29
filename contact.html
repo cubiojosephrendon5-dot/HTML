@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joseph Rendon Cubio | Contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-name">Joseph Rendon L. Cubio</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="learning.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="skills.html">Skills</a></li>
+    </ul>
+  </nav>
+
+  <section class="contact-section">
+  <div class="contact-wrapper">
+    <h2 class="contact-title">Contact Me!</h2>
+    <p class="contact-subtitle">Let’s connect! Reach out via email or socials below.</p>
+
+    <div class="contact-container">
+      <div class="contact-direct">
+        <h3>Direct</h3>
+        <div class="contact-item">
+          <a href="mailto:cubiojosephrendon5@gmail.com">📧 cubiojosephrendon5@gmail.com</a>
+          <button class="copy-btn" onclick="copyEmail()">Copy</button>
+        </div>
+        <div class="contact-item">
+          <a href="https://github.com/cubiojosephrendon5-dot" target="_blank">💻 https://github.com/cubiojosephrendon5-dot</a>
+        </div>
+        <div class="contact-item">
+          <a href="https://www.linkedin.com/in/joseph-rendon-cubio-301b09396/" target="_blank">🔗 https://www.linkedin.com/in/joseph-rendon-cubio-301b09396/</a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Message Me</h3>
+        <form id="messageForm">
+          <input type="text" placeholder="Your name" required>
+          <input type="email" placeholder="Your email" required>
+          <textarea placeholder="Your message" maxlength="1000" required></textarea>
+          <p class="char-limit">Max 1000 characters</p>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>© 2025 Joseph Rendon Cubio</p>
+  </footer>
+
+  <script>
+    function copyEmail() {
+      navigator.clipboard.writeText('josephrendon.cubio@gmail.com');
+      alert('Email copied to clipboard!');
+    }
+  </script>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
